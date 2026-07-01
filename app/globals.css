@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf6ef;
+  color: #4b4038;
+}
+
+.container-page {
+  @apply mx-auto max-w-8xl px-6 sm:px-8 lg:px-12;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-clay px-8 py-4 font-body text-sm font-semibold tracking-wide text-white transition-colors duration-200 hover:bg-clay-dark;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-espresso/20 bg-transparent px-8 py-4 font-body text-sm font-semibold tracking-wide text-espresso transition-colors duration-200 hover:bg-espresso hover:text-cream;
+}
+
+.eyebrow {
+  @apply font-body text-xs font-semibold uppercase tracking-[0.2em] text-clay-dark;
+}
+
+.card {
+  @apply rounded-4xl border border-espresso/10 bg-white/60 p-8 shadow-sm;
+}
