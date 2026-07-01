@@ -27,7 +27,7 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],
         body: ["var(--font-inter)", "sans-serif"],
-        logo: ["Ansam", "var(--font-fraunces)", "cursive", "serif"],
+        logo: ["var(--font-montecarlo)", "cursive"],
       },
       borderRadius: {
         "4xl": "2rem",

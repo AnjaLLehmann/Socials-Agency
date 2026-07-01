@@ -16,7 +16,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-espresso/10 bg-cream/90 backdrop-blur">
       <div className="container-page flex h-20 items-center justify-between">
-        <Link href="/" className="font-logo text-2xl font-normal italic tracking-wide text-espresso">
+        <Link
+          href="/"
+          className="font-logo text-3xl font-normal not-italic tracking-wide text-espresso"
+        >
           Socials Agency
         </Link>
 

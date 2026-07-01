@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Fraunces, Inter, MonteCarlo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -15,6 +15,13 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["400", "500", "600", "700"],
+});
+
+const montecarlo = MonteCarlo({
+  subsets: ["latin"],
+  variable: "--font-montecarlo",
+  weight: "400",
+  style: "normal",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="da" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="da" className={`${fraunces.variable} ${inter.variable} ${montecarlo.variable}`}>
       <body className="font-body antialiased">
         <Header />
         <main>{children}</main>
