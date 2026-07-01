@@ -11,84 +11,69 @@ export const metadata: Metadata = {
 
 const blocks = [
   {
-    title: "Strategi & retning",
-    description: "Vi starter med fundamentet – så alt indhold har et formål.",
+    title: "Strategi & plan",
+    description:
+      "Vi starter med fundamentet, så alt indhold har en klar retning og understøtter dine forretningsmål.",
     points: [
-      "Fastlæggelse af content strategi, mål og fokusområder",
-      "Afklaring af målgruppe, tone of voice og budskaber",
-      "Sparring omkring, hvordan Instagram bedst understøtter din forretning",
+      "Content strategi",
+      "Målgruppe & tone of voice",
+      "Fokusområder",
+      "Sparring om retning",
     ],
   },
   {
-    title: "Brand & visuel sammenhæng",
-    description: "Dit brand skal være genkendeligt og sammenhængende.",
+    title: "Brand & visuel identitet",
+    description:
+      "Din profil skal være genkendelig, professionel og skabe tillid ved første blik.",
     points: [
-      "Komplet brandbook (farver, typografi, visuel stil, content pillars)",
-      "Ensartet udtryk på tværs af opslag, stories og reels",
-      "Sikring af at alt indhold er on-brand",
-    ],
-  },
-  {
-    title: "Content planning & struktur",
-    description: "Overblik er nøglen til kontinuitet.",
-    points: [
-      "Planlægning af opslag og stories",
-      "Overblik over indhold, temaer og posting-frekvens",
-      "Struktur, så du altid ved, hvad der deles",
+      "Brandbook",
+      "Farver & typografi",
+      "Visuel stil",
+      "Ensartet udtryk på tværs af opslag",
     ],
   },
   {
     title: "Content creation",
-    description: "Indhold, der passer til dit brand og din målgruppe.",
+    description:
+      "Fra idé til færdigt indhold planlægger, producerer og strukturerer jeg dit indhold, så din profil er aktiv, professionel og gennemtænkt.",
     points: [
-      "Udarbejdelse af opslag (idéer, tekst og visuel retning)",
-      "Produktion af content til feed, stories og reels",
-      "Mulighed for professionelle foto- og videoshoots (tilvalg)",
+      "Contentplan",
+      "Opslag, stories & reels",
+      "Tekstforfatning",
+      "Professionelle foto- og videoshoots (tilvalg)",
     ],
   },
   {
     title: "Redigering & optimering",
-    description: "Indholdet finpudses, så det performer bedst muligt.",
+    description:
+      "Alt indhold finpudses, så det matcher dit brand og performer bedst muligt.",
     points: [
-      "Redigering af billeder og videoer",
-      "Undertekster, musik, voice-over og tilpasning til format",
-      "Løbende optimering baseret på performance og udvikling",
+      "Redigering af billeder & video",
+      "Undertekster",
+      "Musik & voice-over",
+      "Løbende optimering",
     ],
   },
   {
-    title: "Instagram management (drift)",
-    description: "Jeg håndterer den daglige drift af din profil.",
+    title: "Community management",
+    description:
+      "Jeg holder din profil levende og sørger for, at dine følgere føler sig set.",
     points: [
-      "Planlægning og upload af indhold",
-      "Løbende justeringer og optimering",
-      "Overblik over din profil og dens udvikling",
+      "Planlægning & upload",
+      "Besvarelse af kommentarer & beskeder",
+      "Community management",
+      "Løbende drift af profilen",
     ],
   },
   {
-    title: "Community & synlighed",
-    description: "Relationer skaber resultater.",
+    title: "Analyse & udvikling",
+    description:
+      "Du får løbende indsigt i udviklingen på din profil samt konkrete anbefalinger til næste skridt.",
     points: [
-      "Håndtering af kommentarer og beskeder (DM's)",
-      "Aktiv synlighed og engagement",
-      "Opbygning af relationer med dit community",
-    ],
-  },
-  {
-    title: "Månedsopsummering & indsigt",
-    description: "Så du altid ved, hvor du står.",
-    points: [
-      "Månedsopsummering af performance",
-      "Status på profilen vs. forrige måned",
-      "Indsigter, læringer og anbefalinger til næste periode",
-    ],
-  },
-  {
-    title: "Sparring & løbende justering",
-    description: "Fordi din forretning udvikler sig – og det skal din profil også.",
-    points: [
-      "Løbende dialog og sparring",
-      "Justering af strategi og indhold efter behov",
-      "Plads til spørgsmål, idéer og udvikling",
+      "Månedlig rapport",
+      "Performance-analyse",
+      "Anbefalinger",
+      "Løbende sparring",
     ],
   },
 ];
