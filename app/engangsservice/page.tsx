@@ -41,8 +41,8 @@ export default function EngangsservicePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Til virksomheder"
-            title="1:1 gennemgang af din Instagram-profil"
-            description="Er du typen, der gerne selv vil stå for tingene — men har brug for den rigtige retning? Her finder du mine engangsservices, som giver dig konkrete værktøjer, sparring og klarhed, så du selv kan arbejde videre."
+            title="Få sparring, der flytter din profil"
+            description="Uanset om du ønsker én strategisk Instagram-gennemgang eller et fast coachingforløb, får du konkrete værktøjer, personlig sparring og en plan, der hjælper dig med at udvikle din Instagram med ro, retning og selvtillid."
           />
         </div>
       </section>
