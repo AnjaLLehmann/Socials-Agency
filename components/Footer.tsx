@@ -6,7 +6,9 @@ export default function Footer() {
       <div className="container-page py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <div>
-            <p className="font-display text-xl italic text-espresso">Socials Agency</p>
+            <p className="font-logo text-3xl font-normal not-italic tracking-wide text-espresso">
+              Socials Agency
+            </p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-espresso-light">
               Instagram og SoMe management skabt til dig, der ønsker en
               synlighed, der føles rolig, ægte og strategisk.
