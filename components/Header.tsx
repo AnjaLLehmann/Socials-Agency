@@ -6,7 +6,7 @@ import { useState } from "react";
 const businessLinks = [
   { href: "/some-management", label: "SoMe Management" },
   { href: "/virtual-assistant", label: "Virtual Assistant" },
-  { href: "/engangsservice", label: "1:1 Gennemgang" },
+  { href: "/engangsservice", label: "SoMe Coaching" },
 ];
 
 export default function Header() {
