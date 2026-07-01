@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Ansam";
+  src: url("/fonts/Ansam-Regular.woff2") format("woff2"),
+    url("/fonts/Ansam-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,11 +25,11 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center rounded-full bg-clay px-8 py-4 font-body text-sm font-semibold tracking-wide text-white transition-colors duration-200 hover:bg-clay-dark;
+  @apply inline-flex items-center justify-center rounded-full bg-[#C98C69] px-8 py-4 font-body text-sm font-semibold tracking-wide text-white transition-colors duration-200 hover:bg-[#B87A58];
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center rounded-full border border-espresso/20 bg-transparent px-8 py-4 font-body text-sm font-semibold tracking-wide text-espresso transition-colors duration-200 hover:bg-espresso hover:text-cream;
+  @apply inline-flex items-center justify-center rounded-full border border-[#D8C5B6] bg-transparent px-8 py-4 font-body text-sm font-semibold tracking-wide text-[#5F524C] transition-colors duration-200 hover:bg-[#5F524C] hover:text-white;
 }
 
 .eyebrow {
