@@ -114,12 +114,12 @@ export default function HomePage() {
       <section className="py-20 lg:py-28">
         <div className="container-page">
           <div className="card mx-auto max-w-3xl bg-espresso text-center text-cream">
-            <p className="eyebrow mb-4 !text-clay-light">Klar til at komme i gang?</p>
+            <p className="eyebrow mb-4 !text-cream">Klar til at komme i gang?</p>
             <h2 className="font-display text-3xl sm:text-4xl">
               Har du spørgsmål, eller ved du allerede, at en skræddersyet
               løsning er noget for dig?
             </h2>
-            <p className="mt-5 text-sm leading-relaxed text-cream/80 sm:text-base">
+            <p className="mt-5 text-sm leading-relaxed text-cream sm:text-base">
               Udfyld formularen med dine ønsker — jeg rækker ud til dig
               hurtigst muligt. Jeg glæder mig til at høre om dig, dine
               drømme og mål for dine sociale platforme!

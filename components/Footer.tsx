@@ -31,7 +31,6 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-espresso">
               <li><a href="tel:+4528139031" className="hover:text-clay-dark">+45 2813 9031</a></li>
               <li><a href="mailto:contact@socialsagency.dk" className="hover:text-clay-dark">contact@socialsagency.dk</a></li>
-              <li>Ørbækgårds Alle, 2970 Hørsholm</li>
               <li className="flex gap-4 pt-2">
                 <a href="https://www.instagram.com/socials_agency_/" target="_blank" rel="noreferrer" className="hover:text-clay-dark">
                   Instagram
@@ -45,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-espresso/10 pt-8 text-xs text-espresso-light md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Socials Agency, CVR 45775054 — Ørbækgårds Alle, 2970 Hørsholm</p>
+          <p>© {new Date().getFullYear()} Socials Agency, CVR 45775054</p>
           <div className="flex gap-6">
             <Link href="/handelsbetingelser" className="hover:text-clay-dark">Handelsbetingelser</Link>
             <Link href="/cookies-privatpolitik" className="hover:text-clay-dark">Cookie- og privatpolitik</Link>
