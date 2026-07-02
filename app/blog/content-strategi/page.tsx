@@ -25,7 +25,7 @@ export default function ContentStrategiPost() {
             Sådan finder du din content strategi
           </h1>
 
-          <div className="relative mx-auto mt-10 aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-5xl bg-sand">
+          <div className="relative mx-auto mt-10 aspect-[3/4] w-full max-w-md overflow-hidden rounded-5xl bg-sand">
             <Image
               src="/images/blog/content-strategi-hero.jpg"
               alt="Sådan finder du din content strategi"
