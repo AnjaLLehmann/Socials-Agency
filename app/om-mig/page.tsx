@@ -25,6 +25,14 @@ const timeline = [
     period: "Januar 2026",
     text: "Starten af 2026 går med at sætte langsigtede mål og delmål, så forretningen hele tiden rykker sig fremad. Året er kun lige startet, og jeg tror på, at alle muligheder er åbne — så længe man selv er modtagelig for dem.",
   },
+  {
+    period: "Maj 2026",
+    text: "Et spændende kapitel i min virksomhed begyndte. Jeg valgte at investere i mig selv og min udvikling og rejste til Kreta for at deltage i en intensiv Mastermind. En uge med fuldt fokus på forretning, personlig udvikling og værdifuldt netværk med andre ambitiøse kvinder, der – ligesom jeg – driver deres egne virksomheder.",
+  },
+  {
+    period: "Juni 2026",
+    text: "Juni stod i optimeringens tegn. Jeg arbejdede målrettet med at implementere alle de værktøjer og strategier, jeg havde taget med hjem fra Kreta, samtidig med at både mine kunder og jeg gjorde klar til sommerferien. Der blev planlagt på højtryk, så alt var på plads, inden vi kunne holde en velfortjent pause. Og allerede nu har jeg valgt at investere endnu en gang i både mig selv og min virksomhed. Til september går turen igen til Kreta, hvor jeg endnu en gang bliver udfordret, udviklet og inspireret sammen med en ny gruppe stærke kvindelige iværksættere.",
+  },
 ];
 
 export default function OmMigPage() {
