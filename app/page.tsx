@@ -28,34 +28,40 @@ const helpPoints = [
 
 const services = [
   {
-    title: "Social Media Management",
+    title: "SoMe Management",
     description:
-      "Til dig, der gerne vil være synlig, men ikke har tiden til at stå for det hele selv. Vi skaber struktur og kontinuitet, så din tilstedeværelse føles rolig og troværdig.",
+      "Til virksomheder, der ønsker en professionel og gennemarbejdet tilstedeværelse på Instagram. Jeg hjælper med strategi, planlægning, content og den daglige drift, så du kan fokusere på din forretning.",
     points: [
-      "Content planning & struktur",
+      "Strategi & plan",
       "Content creation",
-      "Instagram management",
-      "Sparring & justering",
+      "Redigering & optimering",
+      "Community management",
+      "Analyse & udvikling",
     ],
     href: "/some-management",
   },
   {
     title: "Virtual Assistant",
     description:
-      "Er du virksomhedsejer med rigt at se til? Jeg træder til remote og løfter opgaver, der kan uddelegeres — uanset hvordan de ser ud.",
+      "Har du brug for en ekstra hånd i hverdagen? Jeg hjælper med struktur, koordinering og administrative opgaver, så du får mere tid til at fokusere på det vigtigste.",
     points: [
       "Struktur & overblik",
-      "Koordinering & opfølgning",
+      "Koordinering",
       "Administrative opgaver",
       "Løbende support",
     ],
     href: "/virtual-assistant",
   },
   {
-    title: "Engangsservice",
+    title: "SoMe Coaching",
     description:
-      "Mest til at klare tingene selv? Her får du guides og en 1:1 gennemgang, der giver dig præcis den retning, du mangler.",
-    points: ["Brandbook", "1:1 Instagram Audit", "Audit som dokument"],
+      "Til dig, der ønsker sparring og konkrete værktøjer til at udvikle din Instagram. Vælg mellem en strategisk Instagram-gennemgang eller et løbende coachingforløb.",
+    points: [
+      "Strategisk Instagram-gennemgang",
+      "Løbende SoMe Coaching",
+      "Personlig sparring",
+      "Klar plan og konkrete næste skridt",
+    ],
     href: "/engangsservice",
   },
 ];
@@ -84,7 +90,7 @@ export default function HomePage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Ydelser til virksomheder"
-            title="Se mine ydelser herunder"
+            title="Sådan kan jeg hjælpe din virksomhed"
             align="center"
           />
           <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
