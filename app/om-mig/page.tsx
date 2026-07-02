@@ -128,26 +128,6 @@ export default function OmMigPage() {
           </div>
         </div>
       </section>
-
-      <section className="py-20 lg:py-28">
-        <div className="container-page grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div className="card">
-            <p className="eyebrow mb-3">Ring her</p>
-            <a href="tel:+4528139031" className="font-display text-2xl text-espresso hover:text-clay-dark">
-              +45 2813 9031
-            </a>
-          </div>
-          <div className="card">
-            <p className="eyebrow mb-3">Email</p>
-            <a
-              href="mailto:contact@socialsagency.dk"
-              className="font-display text-2xl text-espresso hover:text-clay-dark"
-            >
-              contact@socialsagency.dk
-            </a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
