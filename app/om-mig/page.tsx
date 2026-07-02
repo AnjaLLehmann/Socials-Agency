@@ -35,6 +35,21 @@ const timeline = [
   },
 ];
 
+const expectations = [
+  {
+    title: "Nærvær",
+    text: "Jeg tror på ærlig kommunikation og et tæt samarbejde, hvor du altid ved, hvor vi står.",
+  },
+  {
+    title: "Kvalitet",
+    text: "Jeg går op i detaljerne og leverer løsninger, der både ser professionelle ud og skaber værdi.",
+  },
+  {
+    title: "Udvikling",
+    text: "Sociale medier udvikler sig hele tiden – og det gør jeg også. Derfor investerer jeg løbende i ny viden og kompetencer.",
+  },
+];
+
 export default function OmMigPage() {
   return (
     <>
@@ -94,6 +109,20 @@ export default function OmMigPage() {
               <div key={item.period} className="card">
                 <p className="eyebrow mb-3">{item.period}</p>
                 <p className="text-sm leading-relaxed text-espresso-light">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 lg:py-28">
+        <div className="container-page">
+          <SectionHeading title="Hvad du kan forvente af mig" align="center" />
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {expectations.map((item) => (
+              <div key={item.title} className="card">
+                <h3 className="font-display text-xl text-espresso">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-espresso-light">{item.text}</p>
               </div>
             ))}
           </div>
