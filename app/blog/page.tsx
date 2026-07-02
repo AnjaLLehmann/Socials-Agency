@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -10,8 +11,9 @@ const posts = [
   {
     title: "Sådan finder du din content strategi",
     excerpt:
-      "En content strategi behøver ikke være kompliceret — her er min tilgang til at finde en retning, der føles ægte for dig.",
-    date: "Kommer snart",
+      "En content strategi behøver ikke være kompliceret. Her deler jeg, hvordan du finder en retning, der føles autentisk, skaber overblik og gør det lettere at være synlig på Instagram.",
+    date: "Læs indlægget",
+    href: "/blog/content-strategi",
   },
   {
     title: "3 tegn på, at du bør uddelegere din Instagram",
@@ -38,15 +40,29 @@ export default function BlogPage() {
         />
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <div key={post.title} className="card flex h-full flex-col">
-              <p className="eyebrow mb-3">{post.date}</p>
-              <h3 className="font-display text-xl text-espresso">{post.title}</h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-espresso-light">
-                {post.excerpt}
-              </p>
-            </div>
-          ))}
+          {posts.map((post) =>
+            post.href ? (
+              <Link
+                key={post.title}
+                href={post.href}
+                className="card flex h-full flex-col transition-colors duration-200 hover:bg-white"
+              >
+                <p className="eyebrow mb-3">{post.date}</p>
+                <h3 className="font-display text-xl text-espresso">{post.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-espresso-light">
+                  {post.excerpt}
+                </p>
+              </Link>
+            ) : (
+              <div key={post.title} className="card flex h-full flex-col">
+                <p className="eyebrow mb-3">{post.date}</p>
+                <h3 className="font-display text-xl text-espresso">{post.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-espresso-light">
+                  {post.excerpt}
+                </p>
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>
