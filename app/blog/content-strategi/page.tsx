@@ -25,7 +25,7 @@ export default function ContentStrategiPost() {
             Sådan finder du din content strategi
           </h1>
 
-          <div className="relative mt-10 aspect-[3/2] w-full overflow-hidden rounded-5xl bg-sand">
+          <div className="relative mt-10 aspect-[3/4] w-full overflow-hidden rounded-5xl bg-sand">
             <Image
               src="/images/blog/content-strategi-hero.jpg"
               alt="Sådan finder du din content strategi"
@@ -216,10 +216,10 @@ export default function ContentStrategiPost() {
             <p className="eyebrow mb-4 !text-[#B87A58]">
               Klar til at skabe en strategi, der holder?
             </p>
-            <h2 className="font-display text-3xl sm:text-4xl">
+            <h2 className="font-display text-3xl text-[#5F524C] sm:text-4xl">
               Du behøver ikke gøre det alene.
             </h2>
-            <p className="mt-5 text-sm leading-relaxed text-cream sm:text-base">
+            <p className="mt-5 text-sm leading-relaxed text-[#5F524C] sm:text-base">
               Hvis du ønsker en content strategi, der er gennemtænkt,
               realistisk og passer til din virksomhed, hjælper jeg dig
               gerne. Sammen finder vi en retning, der gør det lettere at
