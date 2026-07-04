@@ -28,19 +28,37 @@ const montecarlo = MonteCarlo({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.socialsagency.dk"),
   title: {
-    default: "Socials Agency — Instagram & SoMe Management",
+    default: "Socials Agency | Instagram & SoMe Management",
     template: "%s | Socials Agency",
   },
   description:
-    "Socials Agency hjælper dig med at forstå og bruge Instagram strategisk. Content strategi, drift og struktur til dine sociale medier — af Anja Lehmann.",
+    "Instagram, content og SoMe management for virksomheder, der ønsker en professionel, rolig og strategisk tilstedeværelse online.",
+  alternates: {
+    canonical: "https://www.socialsagency.dk",
+  },
   openGraph: {
-    title: "Socials Agency — Instagram & SoMe Management",
+    title: "Socials Agency | Instagram & SoMe Management",
     description:
-      "Content strategi, drift og struktur til dine sociale medier — af Anja Lehmann.",
+      "Instagram, content og SoMe management for virksomheder, der ønsker en professionel, rolig og strategisk tilstedeværelse online.",
     url: "https://www.socialsagency.dk",
     siteName: "Socials Agency",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Socials Agency | Instagram & SoMe Management",
+      },
+    ],
     locale: "da_DK",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Socials Agency | Instagram & SoMe Management",
+    description:
+      "Instagram, content og SoMe management for virksomheder, der ønsker en professionel, rolig og strategisk tilstedeværelse online.",
+    images: ["/og-image.jpg"],
   },
 };
 
