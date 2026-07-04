@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -73,6 +74,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="da" className={`${fraunces.variable} ${inter.variable} ${montecarlo.variable}`}>
+      <head>
+        <StructuredData />
+      </head>
       <body className="font-body antialiased">
         <Header />
         <main>{children}</main>
