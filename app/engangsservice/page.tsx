@@ -3,9 +3,9 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "1:1 Gennemgang",
+  title: { absolute: "SoMe Coaching | Lær at skabe en stærk Instagram" },
   description:
-    "Få konkrete input til din Instagramprofil, branding og content strategi gennem en 1:1 gennemgang.",
+    "Personlig sparring og coaching, der hjælper dig med at skabe en Instagram-profil med strategi, retning og resultater.",
 };
 
 const services = [

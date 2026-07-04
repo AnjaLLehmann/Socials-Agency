@@ -4,9 +4,9 @@ import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "SoMe Management",
+  title: { absolute: "SoMe Management | Professionel hjælp til sociale medier" },
   description:
-    "Få hjælp til at øge din synlighed på Instagram. Content strategi, drift og struktur til dine sociale medier.",
+    "Slip for stress over sociale medier. Socials Agency hjælper med strategi, content, planlægning og drift af din Instagram og øvrige SoMe-kanaler.",
 };
 
 const blocks = [

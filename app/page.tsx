@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Instagram & SoMe Management for virksomheder | Socials Agency",
+  },
+  description:
+    "Socials Agency hjælper virksomheder med Instagram, content, strategi og SoMe management. Få en professionel til at skabe synlighed, struktur og vækst på sociale medier.",
+};
 
 const helpPoints = [
   {

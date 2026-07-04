@@ -3,8 +3,9 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Tanker, tips og indsigter om Instagram, content og struktur.",
+  title: { absolute: "Blog | Tips om Instagram, content og SoMe" },
+  description:
+    "Artikler om Instagram, contentstrategi, sociale medier og digitale værktøjer, der hjælper din virksomhed med at vokse.",
 };
 
 const posts = [
