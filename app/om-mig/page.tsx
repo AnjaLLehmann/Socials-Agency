@@ -90,7 +90,7 @@ export default function OmMigPage() {
           <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-5xl bg-sand">
             <Image
               src="https://static.wixstatic.com/media/0b9a4b_4f641e494a0f486cb4cd218eff2add28~mv2.jpg"
-              alt="Anja Lehmann"
+              alt="Anja Lehmann, ejer af Socials Agency, som hjælper virksomheder med Instagram og SoMe Management"
               fill
               className="object-cover"
             />

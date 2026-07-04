@@ -28,7 +28,7 @@ export default function ContentStrategiPost() {
           <div className="relative mx-auto mt-10 aspect-[3/4] w-full max-w-md overflow-hidden rounded-5xl bg-sand">
             <Image
               src="/images/blog/content-strategi-hero.jpg"
-              alt="Sådan finder du din content strategi"
+              alt="Anja Lehmann fra Socials Agency, der arbejder med Instagram og SoMe Management, portrætfoto til blogindlægget om content strategi"
               fill
               className="object-cover object-top"
               priority
