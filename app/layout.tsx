@@ -36,6 +36,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.socialsagency.dk",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Socials Agency | Instagram & SoMe Management",
     description:
