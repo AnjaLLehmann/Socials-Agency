@@ -1,8 +1,5 @@
 const siteUrl = "https://www.socialsagency.dk";
-// TODO: Erstat med en dedikeret logo-billedfil (fx /public/logo.png), hvis en sådan
-// tilføjes til projektet. Lige nu findes der kun et tekst-baseret wordmark på siden,
-// så OG-billedet bruges som midlertidigt stand-in for schema.org's "logo"/"image" felt.
-const logoUrl = `${siteUrl}/og-image.jpg`;
+const logoUrl = `${siteUrl}/logo.png`;
 
 const sameAs = [
   "https://www.instagram.com/socials_agency_/",
