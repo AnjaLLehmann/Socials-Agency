@@ -19,6 +19,7 @@ const organizationSchema = {
   name: "Socials Agency",
   url: siteUrl,
   logo: logoUrl,
+  image: logoUrl,
   email: "contact@socialsagency.dk",
   telephone: "+4528139031",
   founder: {
@@ -41,6 +42,7 @@ const localBusinessSchema = {
   url: siteUrl,
   telephone: "+4528139031",
   email: "contact@socialsagency.dk",
+  priceRange: "$$",
   founder: {
     "@type": "Person",
     name: "Anja Lehmann",
