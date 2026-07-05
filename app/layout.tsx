@@ -29,7 +29,7 @@ const montecarlo = MonteCarlo({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.socialsagency.dk"),
   title: {
-    default: "Socials Agency | Instagram & SoMe Management",
+    default: "Instagram & SoMe | Socials Agency",
     template: "%s | Socials Agency",
   },
   description:

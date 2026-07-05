@@ -6,7 +6,7 @@ import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Instagram & SoMe Management for virksomheder | Socials Agency",
+    absolute: "Instagram & SoMe | Socials Agency",
   },
   description:
     "Socials Agency hjælper virksomheder med Instagram, content, strategi og SoMe management. Få en professionel til at skabe synlighed, struktur og vækst på sociale medier.",
