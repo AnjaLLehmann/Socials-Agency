@@ -11,7 +11,7 @@ const TO_EMAIL = "contact@socialsagency.dk";
 // selv. Resends fælles test-adresse (onboarding@resend.dev) er IKKE brugt
 // længere, da den kun kan sende til Resend-kontoens egen emailadresse —
 // det var årsagen til, at mails ikke kom frem.
-const FROM_EMAIL = "Socials Agency <kontakt@socialsagency.dk>";
+const FROM_EMAIL = "Socials Agency <contact@socialsagency.dk>";
 
 export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
