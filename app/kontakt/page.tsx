@@ -3,7 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Kontakt Socials Agency | Book en samtale" },
+  title: "Kontakt",
   description:
     "Har du brug for hjælp til Instagram eller sociale medier? Kontakt Socials Agency og lad os tage en uforpligtende snak.",
 };

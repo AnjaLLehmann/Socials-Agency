@@ -3,7 +3,7 @@ import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: { absolute: "Om Socials Agency | Mød Anja Lehmann" },
+  title: "Om mig",
   description:
     "Lær personen bag Socials Agency at kende, og se hvordan jeg hjælper virksomheder med Instagram, content og digitale løsninger.",
 };

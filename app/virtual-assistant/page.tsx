@@ -4,7 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: { absolute: "Virtual Assistant | Struktur og administrativ hjælp" },
+  title: "Virtual Assistant",
   description:
     "Få mere tid til din virksomhed. Socials Agency tilbyder professionel Virtual Assistant-service med struktur, planlægning og administrative opgaver.",
 };

@@ -3,7 +3,7 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: { absolute: "Blog | Tips om Instagram, content og SoMe" },
+  title: "Blog",
   description:
     "Artikler om Instagram, contentstrategi, sociale medier og digitale værktøjer, der hjælper din virksomhed med at vokse.",
 };
