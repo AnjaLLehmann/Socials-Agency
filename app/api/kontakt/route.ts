@@ -7,12 +7,11 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const TO_EMAIL = "contact@socialsagency.dk";
 
-// NOTE: This "from" address must belong to a domain you have verified in
-// Resend (Resend > Domains). Until socialsagency.dk is verified there,
-// Resend's shared "onboarding@resend.dev" sender is used as a safe fallback
-// for testing — see the explanation below the code for how to switch this
-// to a proper @socialsagency.dk sender once the domain is verified.
-const FROM_EMAIL = "Socials Agency Website <onboarding@resend.dev>";
+// Nu hvor socialsagency.dk er verificeret i Resend, sender vi fra domænet
+// selv. Resends fælles test-adresse (onboarding@resend.dev) er IKKE brugt
+// længere, da den kun kan sende til Resend-kontoens egen emailadresse —
+// det var årsagen til, at mails ikke kom frem.
+const FROM_EMAIL = "Socials Agency <kontakt@socialsagency.dk>";
 
 export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
