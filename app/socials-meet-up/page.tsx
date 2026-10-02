@@ -221,7 +221,11 @@ export default function SocialsMeetUpPage() {
               {eventDetails.map((detail) => (
                 <div key={detail.label}>
                   <p className="eyebrow !text-[#B87A58]">{detail.label}</p>
-                  <p className="mt-2 font-display text-xl text-espresso sm:text-2xl">
+                  <p
+                    className={`mt-2 font-display text-[17px] text-espresso sm:text-[19px] ${
+                      detail.lines.length > 1 ? "leading-snug" : "leading-normal"
+                    }`}
+                  >
                     {detail.lines.map((line, i) => (
                       <span key={i} className="block">
                         {line}
