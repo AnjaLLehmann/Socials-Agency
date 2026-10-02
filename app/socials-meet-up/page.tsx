@@ -113,21 +113,24 @@ export default function SocialsMeetUpPage() {
             <h1 className="font-display text-4xl leading-[1.1] text-espresso sm:text-5xl lg:text-6xl">
               Socials <span className="italic text-clay-dark">Meet Up</span>
             </h1>
-            <p className="mt-6 max-w-lg text-lg leading-relaxed text-espresso sm:text-xl">
-              Et netværk for kvinder, der bygger noget op.
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-espresso-light sm:text-lg">
+              Et sted hvor vi mødes offline, deler erfaringer, sparrer og
+              udvikler vores forretninger – sammen med andre kvinder, der
+              forstår både ambitionerne og alt det, der følger med.
             </p>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-espresso-light sm:text-lg">
-              Et sted hvor vi mødes offline, deler erfaringer, sparrer,
-              udvikler vores forretninger – og skaber relationer med andre
-              kvinder, der forstår rejsen.
+              Her er plads til de gode idéer, de svære spørgsmål og de
+              ting, man måske ikke lige har nogen at vende med i
+              hverdagen.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link href="#naeste-meetup" className="btn-primary">
-                Se næste meet up
+                Se næste Meet Up
               </Link>
             </div>
             <p className="mt-8 font-display text-lg italic text-espresso-light">
-              &ldquo;Netværk skal føles personligt.&rdquo;
+              &ldquo;Jeg har virkelig manglet et sted som det her, hvor det
+              er hyggeligt og rart at være.&rdquo;
             </p>
           </div>
 
