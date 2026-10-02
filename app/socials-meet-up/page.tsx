@@ -84,11 +84,13 @@ const goodieItems = [
 ];
 
 // Placeholder — no real photos from previous Socials Meet Ups exist yet.
+// Four equal 9:16 (Reel-style) frames; drop a real <Image fill
+// className="object-cover" .../> into each once photos exist.
 const moodPlaceholders = [
-  { label: "Billede fra tidligere Socials Meet Up", span: "sm:col-span-2 sm:row-span-2" },
-  { label: "Billede fra tidligere Socials Meet Up", span: "" },
-  { label: "Billede fra tidligere Socials Meet Up", span: "" },
-  { label: "Billede fra tidligere Socials Meet Up", span: "sm:col-span-2" },
+  { label: "Billede fra tidligere Socials Meet Up" },
+  { label: "Billede fra tidligere Socials Meet Up" },
+  { label: "Billede fra tidligere Socials Meet Up" },
+  { label: "Billede fra tidligere Socials Meet Up" },
 ];
 
 // PLACEHOLDER testimonials — not real quotes yet. Clearly marked both in
@@ -317,15 +319,17 @@ export default function SocialsMeetUpPage() {
               </span>
             </h2>
           </div>
-          <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5">
             {moodPlaceholders.map((item, index) => (
               <div
                 key={index}
-                className={`flex aspect-[4/3] items-center justify-center rounded-4xl border border-dashed border-espresso/25 bg-white/50 p-6 text-center ${item.span}`}
+                className="relative aspect-[9/16] w-full overflow-hidden rounded-4xl border border-[#C98C69] bg-white/50"
               >
-                <span className="text-sm text-espresso-light">
-                  {item.label}
-                </span>
+                <div className="flex h-full items-center justify-center p-3 text-center">
+                  <span className="text-xs text-espresso-light sm:text-sm">
+                    {item.label}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
