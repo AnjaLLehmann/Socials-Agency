@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
+import SocialsMeetUpHeader from "@/components/SocialsMeetUpHeader";
 
 const businessLinks = [
   { href: "/some-management", label: "SoMe Management" },
@@ -10,8 +12,16 @@ const businessLinks = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // /socials-meet-up is its own small universe under the brand and uses a
+  // dedicated, minimal header instead of the site-wide navigation below.
+  // Every other route renders the exact same markup as before, unchanged.
+  if (pathname === "/socials-meet-up") {
+    return <SocialsMeetUpHeader />;
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-espresso/10 bg-cream/90 backdrop-blur">

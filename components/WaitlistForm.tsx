@@ -21,7 +21,7 @@ export default function WaitlistForm() {
 
   if (submitted) {
     return (
-      <div className="card text-center">
+      <div className="rounded-4xl border border-espresso/10 bg-white/70 p-10 text-center">
         <p className="font-display text-2xl text-espresso">
           Tak fordi du skrev dig på! 🤎
         </p>
@@ -34,11 +34,14 @@ export default function WaitlistForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="card space-y-6">
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-6 rounded-4xl border border-espresso/10 bg-white/70 p-8 sm:p-10"
+    >
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
           <label
-            className="mb-2 block text-sm font-medium text-espresso"
+            className="mb-2 block text-xs font-semibold uppercase tracking-[0.15em] text-espresso-light"
             htmlFor="firstName"
           >
             Fornavn
@@ -50,12 +53,12 @@ export default function WaitlistForm() {
             required
             minLength={2}
             maxLength={100}
-            className="w-full rounded-2xl border border-espresso/15 bg-white px-4 py-3 text-sm text-espresso outline-none focus:border-clay"
+            className="w-full border-0 border-b border-espresso/20 bg-transparent px-1 py-3 text-sm text-espresso outline-none focus:border-clay-dark"
           />
         </div>
         <div>
           <label
-            className="mb-2 block text-sm font-medium text-espresso"
+            className="mb-2 block text-xs font-semibold uppercase tracking-[0.15em] text-espresso-light"
             htmlFor="waitlistEmail"
           >
             E-mail
@@ -66,7 +69,7 @@ export default function WaitlistForm() {
             type="email"
             required
             maxLength={200}
-            className="w-full rounded-2xl border border-espresso/15 bg-white px-4 py-3 text-sm text-espresso outline-none focus:border-clay"
+            className="w-full border-0 border-b border-espresso/20 bg-transparent px-1 py-3 text-sm text-espresso outline-none focus:border-clay-dark"
           />
         </div>
       </div>
