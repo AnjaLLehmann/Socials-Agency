@@ -408,7 +408,7 @@ export default function SocialsMeetUpPage() {
       <section className="py-20 lg:py-28">
         <div className="container-page">
           <div className="card mx-auto max-w-3xl bg-espresso text-center text-cream">
-            <h2 className="font-display text-3xl text-cream sm:text-4xl">
+            <h2 className="font-display text-3xl text-espresso sm:text-4xl">
               Klar til at være med?
             </h2>
             <p className="mt-4 text-sm text-[#D89A78] sm:text-base">
