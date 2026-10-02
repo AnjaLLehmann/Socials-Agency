@@ -417,21 +417,34 @@ export default function SocialsMeetUpPage() {
             />
           </div>
           <div>
-            <p className="eyebrow mb-4">Om Anja</p>
+            <p className="eyebrow mb-4">Lidt om mig</p>
             <h2 className="font-display text-3xl text-espresso sm:text-4xl">
-              Hej, jeg er Anja 🤎
+              Hej, jeg er Anja.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-espresso-light">
-              <p>Jeg står bag Socials Agency – og Socials Meet Up.</p>
+              <p>Jeg står bag Socials Agency &amp; Socials Meet Up.</p>
               <p>
-                Jeg har skabt netværket, fordi jeg selv savnede et sted, hvor
-                man kunne møde andre kvinder med ambitioner og idéer uden,
-                at networking skulle føles stift eller upersonligt.
+                Jeg har skabt det her netværk, fordi jeg selv savnede et
+                sted, hvor jeg kunne møde andre kvinder med ambitioner og
+                idéer – uden at networking skulle føles stift eller
+                upersonligt.
               </p>
               <p>
-                Et sted hvor vi både kan tale business, dele det der er
-                svært, fejre det der går godt – og hjælpe hinanden videre.
+                Et sted, hvor vi både kan tale business, dele det, der er
+                svært, og fejre det, der går godt.
               </p>
+              <p>
+                Det, jeg selv manglede allermest, var støtten. Et sted, hvor
+                man kan stille spørgsmål, bede om hjælp og sparre med andre,
+                der forstår, hvordan det er at bygge noget op.
+              </p>
+              <p>
+                Det er præcis dét, jeg ønsker at skabe med Socials Meet Up.
+                Et trygt rum, hvor der er plads til alle – uanset om du lige
+                er startet, stadig går med drømmen eller allerede er godt i
+                gang.
+              </p>
+              <p>Her skal der være plads til at være lige dér, hvor du er.</p>
             </div>
           </div>
         </div>
