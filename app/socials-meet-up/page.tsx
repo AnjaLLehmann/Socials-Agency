@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
-import WaitlistForm from "@/components/WaitlistForm";
 import SocialsMeetUpScrollReset from "@/components/SocialsMeetUpScrollReset";
 
 // This landing page is a separate, standalone page for the "Socials Meet Up"
@@ -99,13 +98,6 @@ const testimonials = [
   { quote: "UDTALELSE KOMMER HER", person: "Navn / virksomhed" },
   { quote: "UDTALELSE KOMMER HER", person: "Navn / virksomhed" },
   { quote: "UDTALELSE KOMMER HER", person: "Navn / virksomhed" },
-];
-
-// Placeholder dates — exact dates not decided yet.
-const upcomingDates = [
-  { title: "Socials Meet Up", date: "Dato kommer snart", location: "Hørsholm" },
-  { title: "Socials Meet Up", date: "Dato kommer snart", location: "Hørsholm" },
-  { title: "Socials Meet Up", date: "Dato kommer snart", location: "Hørsholm" },
 ];
 
 export default function SocialsMeetUpPage() {
@@ -364,47 +356,6 @@ export default function SocialsMeetUpPage() {
         </div>
       </section>
 
-      {/* 9. KOMMENDE DATOER */}
-      <section className="bg-sand py-20 lg:py-28">
-        <div className="container-page">
-          <SectionHeading title="Kommende Meet Ups" align="center" />
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {upcomingDates.map((item, index) => (
-              <div key={index} className="card flex flex-col text-center">
-                <h3 className="font-display text-xl text-espresso">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm text-espresso-light">{item.date}</p>
-                <p className="text-sm text-espresso-light">{item.location}</p>
-                <Link
-                  href="#naeste-meetup"
-                  className="btn-secondary mt-6 justify-center"
-                >
-                  Se mere
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 10. VENTELISTE */}
-      <section id="venteliste" className="py-20 lg:py-28">
-        <div className="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
-          <div>
-            <p className="eyebrow mb-4">Ikke klar til at booke endnu?</p>
-            <h2 className="font-display text-3xl text-espresso sm:text-4xl lg:text-5xl">
-              Vil du have næste invitation først?
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-espresso-light sm:text-lg">
-              Skriv dig på listen og vær blandt de første, der får besked,
-              når jeg åbner nye datoer til Socials Meet Up.
-            </p>
-          </div>
-          <WaitlistForm />
-        </div>
-      </section>
-
       {/* 11. OM ANJA */}
       <section className="bg-sand py-20 lg:py-28">
         <div className="container-page grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -454,16 +405,18 @@ export default function SocialsMeetUpPage() {
       <section className="py-20 lg:py-28">
         <div className="container-page">
           <div className="card mx-auto max-w-3xl bg-espresso text-center text-cream">
-            <p className="eyebrow mb-4 !text-[#B87A58]">Socials Meet Up</p>
             <h2 className="font-display text-3xl text-cream sm:text-4xl">
-              Du behøver ikke bygge det alene.
+              Klar til at være med?
             </h2>
-            <Link
-              href="#naeste-meetup"
-              className="btn-primary mt-8 inline-flex"
-            >
-              Se næste dato
-            </Link>
+            <p className="mt-4 text-sm text-[#D89A78] sm:text-base">
+              Socials Meet Up · 7. november · Hørsholm
+            </p>
+            {/* Mirrors the "Book din plads" button in "Næste Socials Meet
+                Up" exactly: no booking link exists yet, so this stays a
+                plain, unwired button rather than inventing one. */}
+            <button type="button" className="btn-primary mt-8 inline-flex">
+              Book din plads
+            </button>
           </div>
         </div>
       </section>
