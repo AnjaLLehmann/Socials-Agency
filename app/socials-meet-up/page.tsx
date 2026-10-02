@@ -139,7 +139,7 @@ export default function SocialsMeetUpPage() {
             </p>
           </div>
 
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-5xl bg-sand">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-5xl border border-[#C98C69] bg-sand">
             <Image
               src="/images/anja-hero.jpg"
               alt="Anja Lehmann, stifter af Socials Meet Up"
@@ -154,7 +154,7 @@ export default function SocialsMeetUpPage() {
       {/* 2. HVAD ER SOCIALS MEET UP? */}
       <section className="py-20 lg:py-28">
         <div className="container-page grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-5xl bg-sand lg:order-1">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-5xl border border-[#C98C69] bg-sand lg:order-1">
             <Image
               src="/images/blog/content-strategi-hero.jpg"
               alt="Stemningen til et Socials Meet Up"
@@ -281,13 +281,17 @@ export default function SocialsMeetUpPage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="eyebrow mb-3">And yes...</p>
             <h2 className="font-display text-3xl text-espresso sm:text-4xl lg:text-5xl">
-              Der er selvfølgelig også en goodiebag 🤎
+              Du får selvfølgelig også lidt med hjem
             </h2>
             <p className="mt-5 text-base leading-relaxed text-espresso-light sm:text-lg">
               Jeg elsker de små detaljer, der gør en dag lidt mere særlig.
-              Derfor får du også lidt med hjem fra Socials Meet Up – både
-              noget, du kan bruge på dagen, og små overraskelser fra mig og
-              eventuelle samarbejdspartnere.
+              Derfor vil der altid være tænkt over noget ekstra til Socials
+              Meet Up – det kan være små overraskelser, produkter,
+              materialer eller noget helt andet, du kan tage med dig hjem.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-espresso-light sm:text-lg">
+              Præcis hvad det bliver, kan variere fra gang til gang. Det er
+              en del af oplevelsen.
             </p>
           </div>
           <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
@@ -404,7 +408,7 @@ export default function SocialsMeetUpPage() {
       {/* 11. OM ANJA */}
       <section className="bg-sand py-20 lg:py-28">
         <div className="container-page grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-5xl bg-cream">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-5xl border border-[#C98C69] bg-cream">
             <Image
               src="/images/anja-hero.jpg"
               alt="Anja Lehmann, stifter af Socials Meet Up og Socials Agency"
