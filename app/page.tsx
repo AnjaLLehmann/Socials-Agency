@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import WaitlistForm from "@/components/WaitlistForm";
+import SocialsMeetUpScrollReset from "@/components/SocialsMeetUpScrollReset";
 
 // This landing page is a separate, standalone page for the "Socials Meet Up"
 // networking concept. It intentionally lives outside the main navigation
@@ -56,11 +57,11 @@ const expectCards = [
 ];
 
 const eventDetails = [
-  { label: "Dato", value: "Kommer snart" },
-  { label: "Tid", value: "10.00 – 15.00" },
-  { label: "Lokation", value: "Hørsholm" },
-  { label: "Pladser", value: "Begrænset antal" },
-  { label: "Pris", value: "Kommer snart" },
+  { label: "Dato", lines: ["Lørdag d. 7. november"] },
+  { label: "Tid", lines: ["11.00 – 15.00"] },
+  { label: "Lokation", lines: ["Agern Alle 5A", "2970 Hørsholm"] },
+  { label: "Pladser", lines: ["10 pladser"] },
+  { label: "Pris", lines: ["300 kr."] },
 ];
 
 const schedule = [
@@ -110,6 +111,8 @@ const upcomingDates = [
 export default function SocialsMeetUpPage() {
   return (
     <>
+      <SocialsMeetUpScrollReset />
+
       {/* 1. HERO */}
       <section className="overflow-hidden bg-cream">
         <div className="container-page grid grid-cols-1 items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
@@ -210,17 +213,20 @@ export default function SocialsMeetUpPage() {
       <section id="naeste-meetup" className="py-20 lg:py-28">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Konverteringssektion"
             title="Næste Socials Meet Up"
             align="center"
           />
-          <div className="card mx-auto mt-14 max-w-3xl bg-espresso text-cream">
+          <div className="card mx-auto mt-14 max-w-3xl">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               {eventDetails.map((detail) => (
                 <div key={detail.label}>
                   <p className="eyebrow !text-[#B87A58]">{detail.label}</p>
-                  <p className="mt-2 font-display text-2xl text-cream">
-                    {detail.value}
+                  <p className="mt-2 font-display text-xl text-espresso sm:text-2xl">
+                    {detail.lines.map((line, i) => (
+                      <span key={i} className="block">
+                        {line}
+                      </span>
+                    ))}
                   </p>
                 </div>
               ))}
