@@ -20,8 +20,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-espresso">
               <li><Link href="/" className="hover:text-clay-dark">Forside</Link></li>
               <li><Link href="/some-management" className="hover:text-clay-dark">SoMe Management</Link></li>
-              <li><Link href="/virtual-assistant" className="hover:text-clay-dark">Virtual Assistant</Link></li>
-              <li><Link href="/engangsservice" className="hover:text-clay-dark">SoMe Coaching</Link></li>
+              <li><Link href="/engangsservice" className="hover:text-clay-dark">Instagram &amp; Business Coaching</Link></li>
               <li><Link href="/om-mig" className="hover:text-clay-dark">Om mig</Link></li>
               <li><Link href="/blog" className="hover:text-clay-dark">Blog</Link></li>
               <li><Link href="/kontakt" className="hover:text-clay-dark">Kontakt</Link></li>
