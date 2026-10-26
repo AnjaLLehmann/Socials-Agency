@@ -1,27 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
-import SocialsMeetUpHeader from "@/components/SocialsMeetUpHeader";
 
 const businessLinks = [
   { href: "/some-management", label: "SoMe Management" },
-  { href: "/virtual-assistant", label: "Virtual Assistant" },
-  { href: "/engangsservice", label: "SoMe Coaching" },
+  { href: "/engangsservice", label: "Instagram & Business Coaching" },
 ];
 
 export default function Header() {
-  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  // /socials-meet-up is its own small universe under the brand and uses a
-  // dedicated, minimal header instead of the site-wide navigation below.
-  // Every other route renders the exact same markup as before, unchanged.
-  if (pathname === "/socials-meet-up") {
-    return <SocialsMeetUpHeader />;
-  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-espresso/10 bg-cream/90 backdrop-blur">
@@ -47,7 +36,7 @@ export default function Header() {
               Til virksomheder
             </button>
             {open && (
-              <div className="absolute left-1/2 top-full w-64 -translate-x-1/2 pt-3">
+              <div className="absolute left-1/2 top-full w-72 -translate-x-1/2 pt-3">
                 <div className="rounded-3xl border border-espresso/10 bg-white p-3 shadow-lg">
                   {businessLinks.map((link) => (
                     <Link
