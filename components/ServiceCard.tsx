@@ -2,11 +2,13 @@ type Props = {
   title: string;
   description: string;
   points?: string[];
+  /** Diskret hover-løft (bruges på undersiderne). */
+  lift?: boolean;
 };
 
-export default function ServiceCard({ title, description, points }: Props) {
+export default function ServiceCard({ title, description, points, lift = false }: Props) {
   return (
-    <div className="card h-full">
+    <div className={lift ? "card card-lift h-full" : "card h-full"}>
       <h3 className="font-display text-xl text-espresso">{title}</h3>
       <p className="mt-3 text-sm leading-relaxed text-espresso-light">{description}</p>
       {points && points.length > 0 && (

@@ -6,7 +6,7 @@ type Props = {
   description?: string;
   align?: "left" | "center";
   /** Valgfri scroll-animation (kun forsiden bruger den). */
-  animate?: boolean;
+  animate?: boolean | "intro";
 };
 
 export default function SectionHeading({
@@ -19,14 +19,14 @@ export default function SectionHeading({
   if (animate) {
     return (
       <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
-        <Reveal>
+        <Reveal intro={animate === "intro"}>
           {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
           <h2 className="font-display text-3xl text-espresso sm:text-4xl lg:text-5xl">
             {title}
           </h2>
         </Reveal>
         {description && (
-          <Reveal delay={140}>
+          <Reveal delay={140} intro={animate === "intro"}>
             <p className="mt-5 text-base leading-relaxed text-espresso-light sm:text-lg">
               {description}
             </p>

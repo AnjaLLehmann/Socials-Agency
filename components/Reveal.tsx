@@ -33,9 +33,16 @@ type Props = {
   /** Forsinkelse i millisekunder (bruges til stagger). */
   delay?: number;
   className?: string;
+  /**
+   * Til elementer øverst på siden: glider blødt ind ved sideindlæsning
+   * (ren CSS, så der ikke opstår et "blink"). Scroll-animationen virker
+   * stadig bagefter, så elementet kan animere ind igen, hvis man scroller
+   * væk og tilbage.
+   */
+  intro?: boolean;
 };
 
-export default function Reveal({ children, delay = 0, className }: Props) {
+export default function Reveal({ children, delay = 0, className, intro = false }: Props) {
   const ref = useRef<HTMLDivElement>(null);
 
   useIsomorphicLayoutEffect(() => {
@@ -101,7 +108,7 @@ export default function Reveal({ children, delay = 0, className }: Props) {
   ) as CSSProperties | undefined;
 
   return (
-    <div ref={ref} className={["reveal", className].filter(Boolean).join(" ")} style={style}>
+    <div ref={ref} className={["reveal", intro && "reveal-intro", className].filter(Boolean).join(" ")} style={style}>
       {children}
     </div>
   );

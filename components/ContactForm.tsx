@@ -144,7 +144,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="btn-primary w-full sm:w-auto disabled:cursor-not-allowed disabled:opacity-60"
+        className="btn-primary btn-lift w-full sm:w-auto disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "loading" ? "Sender..." : "Send besked"}
       </button>
