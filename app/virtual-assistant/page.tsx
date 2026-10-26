@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 
@@ -66,20 +67,28 @@ export default function VirtualAssistantPage() {
             eyebrow="Til virksomheder"
             title="Virtual Assistant"
             description="Mangler du en ekstra hånd til håndtering af manuelle processer eller strukturering af dokumenter? Jeg hjælper dig med at skabe overblik og struktur i en travl hverdag."
+            animate="intro"
           />
         </div>
       </section>
 
       <section className="pb-20 lg:pb-28">
         <div className="container-page grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {blocks.map((block) => (
-            <ServiceCard key={block.title} {...block} />
+          {blocks.map((block, i) => (
+            <Reveal
+              key={block.title}
+              className="h-full"
+              intro={i < 3}
+              delay={i < 3 ? 260 + i * 100 : (i % 3) * 100}
+            >
+              <ServiceCard {...block} lift />
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="bg-sand py-20 lg:py-28">
-        <div className="container-page text-center">
+        <Reveal className="container-page text-center">
           <p className="font-display text-2xl text-espresso sm:text-3xl">
             Mine Virtual Assistant-ydelser afregnes til{" "}
             <span className="text-clay-dark">650 kr./time</span> (ex. moms)
@@ -90,10 +99,10 @@ export default function VirtualAssistantPage() {
             som en ekstra ressource i din forretning og frigiver tid til
             det, der skaber mest værdi for dig.
           </p>
-          <Link href="/kontakt" className="btn-primary mt-8 inline-flex">
+          <Link href="/kontakt" className="btn-primary btn-lift mt-8 inline-flex">
             Book samtale
           </Link>
-        </div>
+        </Reveal>
       </section>
     </>
   );
