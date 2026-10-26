@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 
@@ -87,20 +88,28 @@ export default function SomeManagementPage() {
             eyebrow="Til virksomheder"
             title="Social Media Management"
             description="Her finder du den samlede oversigt over mine SoMe-ydelser. Det er blot en oversigt — det er altid muligt at fravælge og tilvælge ydelser, alt efter hvordan dine ønsker og mål ser ud."
+            animate="intro"
           />
         </div>
       </section>
 
       <section className="pb-20 lg:pb-28">
         <div className="container-page grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {blocks.map((block) => (
-            <ServiceCard key={block.title} {...block} />
+          {blocks.map((block, i) => (
+            <Reveal
+              key={block.title}
+              className="h-full"
+              intro={i < 3}
+              delay={i < 3 ? 260 + i * 100 : (i % 3) * 100}
+            >
+              <ServiceCard {...block} lift />
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="bg-sand py-20 lg:py-28">
-        <div className="container-page text-center">
+        <Reveal className="container-page text-center">
           <p className="font-display text-2xl text-espresso sm:text-3xl">
             Social Media-samarbejder starter fra{" "}
             <span className="text-clay-dark">10.000 kr./md.</span> (ex. moms)
@@ -112,10 +121,10 @@ export default function SomeManagementPage() {
             Vil du høre mere, eller er du allerede klar til at gå i gang?
             Book en samtale nedenfor — jeg rækker ud til dig hurtigst muligt.
           </p>
-          <Link href="/kontakt" className="btn-primary mt-8 inline-flex">
+          <Link href="/kontakt" className="btn-primary btn-lift mt-8 inline-flex">
             Book samtale
           </Link>
-        </div>
+        </Reveal>
       </section>
     </>
   );
