@@ -111,11 +111,8 @@ export default function SomeManagementPage() {
       <section className="bg-sand py-20 lg:py-28">
         <Reveal className="container-page text-center">
           <p className="font-display text-2xl text-espresso sm:text-3xl">
-            Social Media-samarbejder starter fra{" "}
-            <span className="text-clay-dark">10.000 kr./md.</span> (ex. moms)
-          </p>
-          <p className="mx-auto mt-4 max-w-xl text-sm text-espresso-light">
-            Alt efter hvad din aftale skal indeholde, vil prisen variere.
+            Social Media Management koster{" "}
+            <span className="text-clay-dark">13.000 kr./md.</span> (ex. moms)
           </p>
           <p className="mx-auto mt-6 max-w-xl text-sm text-espresso-light">
             Vil du høre mere, eller er du allerede klar til at gå i gang?
