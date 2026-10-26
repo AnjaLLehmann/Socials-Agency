@@ -4,9 +4,9 @@ import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: { absolute: "SoMe Coaching | Lær at skabe en stærk Instagram" },
+  title: { absolute: "Instagram & Business Coaching | Lær at skabe en stærk Instagram" },
   description:
-    "Personlig sparring og coaching, der hjælper dig med at skabe en Instagram-profil med strategi, retning og resultater.",
+    "Strategisk Instagram Gennemgang og et personligt 4-måneders coachingforløb med online 1:1 sparring hver 14. dag, der hjælper dig med at skabe en Instagram-profil med strategi, retning og resultater.",
 };
 
 const services = [
@@ -19,19 +19,20 @@ const services = [
       "Dit indhold og din visuelle retning",
       "Konkrete forslag til ændringer",
     ],
-    price: "1.095 kr. (ex. moms) / 1 times session",
+    price: "1.500 kr. (ex. moms) / 1 times session",
   },
   {
-    title: "SoMe Coaching",
+    title: "Instagram & Business Coaching",
     description:
-      "Til dig, der ønsker en fast sparringspartner. Vi mødes online hver 14. dag, lægger en plan, følger op og justerer strategien, så du hele tiden bevæger dig tættere på dine mål.",
+      "Til dig, der ønsker at udvikle din Instagram og skabe en forretning omkring din profil. Gennem fire måneder arbejder vi sammen om din retning, strategi og udvikling. Du får konkrete værktøjer, personlig sparring og en plan, der passer til dine ambitioner.",
     points: [
-      "Online sparring hver 14. dag",
-      "Personlig strategi & handlingsplan",
-      "Feedback på dit indhold",
-      "Løbende justering og udvikling",
+      "Online 1:1 sparring hver 14. dag",
+      "Personlig strategi og handlingsplan",
+      "Contentstrategi og organisk vækst",
+      "Muligheder for samarbejder og indtjening",
+      "Feedback og løbende udvikling",
     ],
-    price: "2.000 kr. (ex. moms) / måned",
+    price: "16.000 kr. (ex. moms) for hele forløbet på 4 måneder",
   },
 ];
 
