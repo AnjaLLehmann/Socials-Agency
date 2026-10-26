@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function EngangsservicePage() {
             eyebrow="Til virksomheder"
             title="Få sparring, der flytter din profil"
             description="Uanset om du ønsker én strategisk Instagram-gennemgang eller et fast coachingforløb, får du konkrete værktøjer, personlig sparring og en plan, der hjælper dig med at udvikle din Instagram med ro, retning og selvtillid."
+            animate="intro"
           />
         </div>
       </section>
@@ -50,8 +52,9 @@ export default function EngangsservicePage() {
       <section className="pb-20 lg:pb-28">
         <div className="container-page">
           <div className="mx-auto grid max-w-3xl grid-cols-1 gap-8 sm:grid-cols-2">
-            {services.map((service) => (
-              <div key={service.title} className="card flex h-full flex-col">
+            {services.map((service, i) => (
+              <Reveal key={service.title} className="h-full" intro delay={260 + i * 120}>
+              <div className="card card-lift flex h-full flex-col">
                 <h3 className="font-display text-xl text-espresso">{service.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-espresso-light">
                   {service.description}
@@ -66,13 +69,14 @@ export default function EngangsservicePage() {
                 </ul>
                 <p className="mt-6 font-display text-lg text-clay-dark">{service.price}</p>
               </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
       <section className="bg-sand py-20 lg:py-28">
-        <div className="container-page text-center">
+        <Reveal className="container-page text-center">
           <p className="font-display text-2xl text-espresso sm:text-3xl">
             Vil du gerne høre mere, eller er du allerede klar til at gå i gang?
           </p>
@@ -80,10 +84,10 @@ export default function EngangsservicePage() {
             Book en uforpligtende samtale via knappen nedenfor — jeg vender
             tilbage til dig hurtigst muligt.
           </p>
-          <Link href="/kontakt" className="btn-primary mt-8 inline-flex">
+          <Link href="/kontakt" className="btn-primary btn-lift mt-8 inline-flex">
             Book samtale
           </Link>
-        </div>
+        </Reveal>
       </section>
     </>
   );
