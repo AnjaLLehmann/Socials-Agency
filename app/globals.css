@@ -94,6 +94,13 @@ body {
   transition-delay: calc(var(--reveal-delay, 0ms) * 0.4);
 }
 
+/* Elementer øverst på undersider: samme blide indgang som hero'en.
+   "backwards" = ingen fastholdt slutstilling, så scroll-reveal kan overtage. */
+.reveal-intro {
+  animation: hero-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
 /* Knapper på forsiden: blød løft ved hover (kun enheder med rigtig hover) */
 .btn-lift {
   transition-property: background-color, color, border-color, transform, box-shadow;
@@ -117,9 +124,17 @@ body {
   transform: scale(0.98);
 }
 
+.btn-lift:disabled,
+.btn-lift:disabled:hover,
+.btn-lift:disabled:active {
+  transform: none;
+  box-shadow: none;
+}
+
 /* Servicekort: diskret løft ved hover (kun enheder med rigtig hover) */
 .card-lift {
   transition:
+    background-color 0.2s,
     transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -134,7 +149,8 @@ body {
 /* Reduceret bevægelse: ingen bevægelse, alt vises med det samme */
 @media (prefers-reduced-motion: reduce) {
   .hero-rise,
-  .hero-zoom {
+  .hero-zoom,
+  .reveal-intro {
     animation: none;
   }
   .reveal,
