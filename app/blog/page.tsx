@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -38,15 +39,16 @@ export default function BlogPage() {
           eyebrow="Blog"
           title="Tanker om Instagram, content og struktur"
           description="Her deler jeg løbende indsigter, tips og refleksioner fra arbejdet med sociale medier. Nye indlæg er på vej."
+          animate="intro"
         />
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) =>
-            post.href ? (
+          {posts.map((post, i) => (
+            <Reveal key={post.title} className="h-full" intro delay={260 + i * 100}>
+            {post.href ? (
               <Link
-                key={post.title}
                 href={post.href}
-                className="card flex h-full flex-col transition-colors duration-200 hover:bg-white"
+                className="card card-lift flex h-full flex-col hover:bg-white"
               >
                 <p className="eyebrow mb-3">{post.date}</p>
                 <h3 className="font-display text-xl text-espresso">{post.title}</h3>
@@ -55,15 +57,16 @@ export default function BlogPage() {
                 </p>
               </Link>
             ) : (
-              <div key={post.title} className="card flex h-full flex-col">
+              <div className="card card-lift flex h-full flex-col">
                 <p className="eyebrow mb-3">{post.date}</p>
                 <h3 className="font-display text-xl text-espresso">{post.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-espresso-light">
                   {post.excerpt}
                 </p>
               </div>
-            )
-          )}
+            )}
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>
