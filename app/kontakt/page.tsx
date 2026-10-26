@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
 
@@ -17,10 +18,13 @@ export default function KontaktPage() {
             eyebrow="Kontakt"
             title="Lad os tage en snak"
             description="Fortæl mig om din virksomhed, dine mål eller de udfordringer, du står med. Udfyld formularen, så vender jeg tilbage hurtigst muligt – og sammen finder vi ud af, hvordan jeg bedst kan hjælpe dig."
+            animate="intro"
           />
         </div>
 
-        <ContactForm />
+        <Reveal intro delay={260}>
+          <ContactForm />
+        </Reveal>
       </div>
     </section>
   );
