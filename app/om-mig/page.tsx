@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
@@ -56,10 +57,13 @@ export default function OmMigPage() {
       <section className="py-20 lg:py-28">
         <div className="container-page grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div>
-            <p className="eyebrow mb-4">Founder af Socials Agency</p>
-            <h1 className="font-display text-4xl text-espresso sm:text-5xl">
-              Anja Lehmann
-            </h1>
+            <Reveal intro>
+              <p className="eyebrow mb-4">Founder af Socials Agency</p>
+              <h1 className="font-display text-4xl text-espresso sm:text-5xl">
+                Anja Lehmann
+              </h1>
+            </Reveal>
+            <Reveal intro delay={140}>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-espresso-light">
               <p>
                 Jeg har altid haft en stemme indeni, der fortalte mig, at der
@@ -85,8 +89,10 @@ export default function OmMigPage() {
                 samarbejder med.
               </p>
             </div>
+            </Reveal>
           </div>
 
+          <Reveal intro delay={200}>
           <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-5xl bg-sand">
             <Image
               src="https://static.wixstatic.com/media/0b9a4b_4f641e494a0f486cb4cd218eff2add28~mv2.jpg"
@@ -95,6 +101,7 @@ export default function OmMigPage() {
               className="object-cover"
             />
           </div>
+          </Reveal>
         </div>
       </section>
 
@@ -103,13 +110,16 @@ export default function OmMigPage() {
           <SectionHeading
             eyebrow="Rejsen indtil videre"
             title="Jeg fulgte min drøm — selvom den endnu ikke havde taget form"
+            animate
           />
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {timeline.map((item) => (
-              <div key={item.period} className="card">
+            {timeline.map((item, i) => (
+              <Reveal key={item.period} className="h-full" delay={(i % 4) * 90}>
+              <div className="card card-lift h-full">
                 <p className="eyebrow mb-3">{item.period}</p>
                 <p className="text-sm leading-relaxed text-espresso-light">{item.text}</p>
               </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -117,13 +127,15 @@ export default function OmMigPage() {
 
       <section className="py-20 lg:py-28">
         <div className="container-page">
-          <SectionHeading title="Hvad du kan forvente af mig" align="center" />
+          <SectionHeading title="Hvad du kan forvente af mig" align="center" animate />
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {expectations.map((item) => (
-              <div key={item.title} className="card">
+            {expectations.map((item, i) => (
+              <Reveal key={item.title} className="h-full" delay={i * 120}>
+              <div className="card card-lift h-full">
                 <h3 className="font-display text-xl text-espresso">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-espresso-light">{item.text}</p>
               </div>
+              </Reveal>
             ))}
           </div>
         </div>
